@@ -24,7 +24,7 @@
 
 @interface MagicalRecord (ActionsDeprecated)
 
-+ (void) saveUsingCurrentThreadContextWithBlock:(void (^)(NSManagedObjectContext *localContext))block completion:(MRSaveCompletionHandler)completion MR_DEPRECATED_WILL_BE_REMOVED_IN("3.0");
++ (void) saveUsingCurrentThreadContextWithBlock:(void (^)(NSManagedObjectContext *localContext))block completion:(MRSaveCompletionHandler)completion; // MR_DEPRECATED_WILL_BE_REMOVED_IN("3.0");
 + (void) saveUsingCurrentThreadContextWithBlockAndWait:(void (^)(NSManagedObjectContext *localContext))block MR_DEPRECATED_WILL_BE_REMOVED_IN("3.0");
 + (void) saveInBackgroundWithBlock:(void(^)(NSManagedObjectContext *localContext))block MR_DEPRECATED_WILL_BE_REMOVED_IN("3.0");
 + (void) saveInBackgroundWithBlock:(void(^)(NSManagedObjectContext *localContext))block completion:(void(^)(void))completion MR_DEPRECATED_WILL_BE_REMOVED_IN("3.0");
